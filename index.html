@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malla de Carrera</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f5;
+      text-align: center;
+    }
+    h1 {
+      color: #c96ea0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .semestre {
+      width: 220px;
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid #e0aee0;
+      border-radius: 10px;
+      background-color: #fdf6fb;
+    }
+    .semestre h3 {
+      color: #a64ca6;
+    }
+    .materia {
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 5px;
+      background-color: #ffe0f0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .materia.aprobada {
+      background-color: #c8f7c5;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla de Carrera</h1>
+  <p>Haz clic en cada materia para marcarla como aprobada ✅</p>
+
+  <div class="container">
+    <div class="semestre">
+      <h3>Semestre 1</h3>
+      <div class="materia" onclick="toggle(this)">Cálculo 1</div>
+      <div class="materia" onclick="toggle(this)">Geometría y Álgebra Lineal 1</div>
+      <div class="materia" onclick="toggle(this)">Física 1</div>
+      <div class="materia" onclick="toggle(this)">Taller de Representación y Comunicación Gráfica</div>
+      <div class="materia" onclick="toggle(this)">Introducción al Derecho</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 2</h3>
+      <div class="materia" onclick="toggle(this)">Cálculo Diferencial e Integral en Varias Variables</div>
+      <div class="materia" onclick="toggle(this)">Geometría y Álgebra Lineal 2</div>
+      <div class="materia" onclick="toggle(this)">Física 2</div>
+      <div class="materia" onclick="toggle(this)">Economía</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 3</h3>
+      <div class="materia" onclick="toggle(this)">Probabilidad y Estadística</div>
+      <div class="materia" onclick="toggle(this)">Taller de Datos Espaciales y SIG</div>
+      <div class="materia" onclick="toggle(this)">Sistemas de Referencia</div>
+      <div class="materia" onclick="toggle(this)">Ciencia, Tecnología y Sociedad</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 4</h3>
+      <div class="materia" onclick="toggle(this)">Física 3</div>
+      <div class="materia" onclick="toggle(this)">Instrumental</div>
+      <div class="materia" onclick="toggle(this)">Python</div>
+      <div class="materia" onclick="toggle(this)">Teoría de Errores 1</div>
+      <div class="materia" onclick="toggle(this)">Cálculo Vectorial</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 5</h3>
+      <div class="materia" onclick="toggle(this)">Teoría de Errores 2</div>
+      <div class="materia" onclick="toggle(this)">Agrimensura Legal 1</div>
+      <div class="materia" onclick="toggle(this)">Captura de Datos por Percepción Remota</div>
+      <div class="materia" onclick="toggle(this)">Geodesia Geométrica</div>
+      <div class="materia" onclick="toggle(this)">Introducción al Análisis Rural</div>
+      <div class="materia" onclick="toggle(this)">Topografía 1</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 6</h3>
+      <div class="materia" onclick="toggle(this)">Cartografía Matemática</div>
+      <div class="materia" onclick="toggle(this)">Fotogrametría</div>
+      <div class="materia" onclick="toggle(this)">Agrimensura Legal 2</div>
+      <div class="materia" onclick="toggle(this)">Geodesia Astronómica</div>
+      <div class="materia" onclick="toggle(this)">Topografía 2</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 7</h3>
+      <div class="materia" onclick="toggle(this)">Topografía 3</div>
+      <div class="materia" onclick="toggle(this)">Caminos y Calles 1</div>
+      <div class="materia" onclick="toggle(this)">Avaluaciones 1</div>
+      <div class="materia" onclick="toggle(this)">Geodesia Satelital</div>
+      <div class="materia" onclick="toggle(this)">Agrimensura Legal 3</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 8</h3>
+      <div class="materia" onclick="toggle(this)">Avaluaciones 2</div>
+      <div class="materia" onclick="toggle(this)">Catastro</div>
+      <div class="materia" onclick="toggle(this)">Pasantía</div>
+      <div class="materia" onclick="toggle(this)">Ordenamiento Territorial 1</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 9</h3>
+      <div class="materia" onclick="toggle(this)">Geodesia Física</div>
+      <div class="materia" onclick="toggle(this)">Ordenamiento Territorial 2</div>
+    </div>
+
+    <div class="semestre">
+      <h3>Semestre 10</h3>
+      <div class="materia" onclick="toggle(this)">Proyecto</div>
+    </div>
+  </div>
+
+  <script>
+    function toggle(el) {
+      el.classList.toggle('aprobada');
+    }
+  </script>
+</body>
+</html>
